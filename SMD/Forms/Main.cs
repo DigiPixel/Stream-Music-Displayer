@@ -93,6 +93,8 @@ namespace SMD
         {
             if (timer.Enabled)
             {
+                currentSong = null;
+
                 toolStripSeparator2.Visible = false;
                 currentSonglb.Visible = false;
                 currentsongToolStripMenuItem.Visible = false;
@@ -323,7 +325,7 @@ namespace SMD
         {
             try
             {
-                Process.Start("help link");
+                Process.Start("https://obsproject.com/forum/resources/stream-music-displayer.107/");
             }
             catch (Exception ex) { }
         }
